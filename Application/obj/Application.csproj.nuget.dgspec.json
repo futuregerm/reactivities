@@ -14,7 +14,7 @@
         "outputPath": "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/moneygerm/.nuget/NuGet/NuGet.Config"
+          "/Users/moneygerm/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -24,7 +24,48 @@
         },
         "frameworks": {
           "net5.0": {
-            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Domain/Domain.csproj": {
+                "projectPath": "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Domain/Domain.csproj"
+              },
+              "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Persistence/Persistence.csproj": {
+                "projectPath": "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Persistence/Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "runtimeIdentifierGraphPath": "/Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Domain/Domain.csproj",
+        "packagesPath": "/Users/moneygerm/.nuget/packages/",
+        "outputPath": "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moneygerm/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
             "projectReferences": {}
           }
         },
@@ -36,23 +77,52 @@
       },
       "frameworks": {
         "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
+          "runtimeIdentifierGraphPath": "/Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Persistence/Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Persistence/Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Persistence/Persistence.csproj",
+        "packagesPath": "/Users/moneygerm/.nuget/packages/",
+        "outputPath": "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moneygerm/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {
+              "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Domain/Domain.csproj": {
+                "projectPath": "/Users/moneygerm/Desktop/dev/web/dotnet-react/Reactivities/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.3, )"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
         }
       }
     }
